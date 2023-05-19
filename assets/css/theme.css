@@ -2240,6 +2240,7 @@ a.fg-light:focus {
 .team-carousel {
   display: block;
   width: 100%;
+  padding: 50px;
 }
 
 .team-wrap {
@@ -2410,6 +2411,12 @@ footer .team-content h3 {
   color: #83879e;
 }
 
+.testimonial-single h5 {
+  font-style: italic;
+  font-weight: 300;
+  color: #83879e;
+}
+
 .testimonial-single .img-fluid {
   margin: 0 auto;
   width: 300px;
@@ -2417,6 +2424,34 @@ footer .team-content h3 {
   border-radius: 50%;
   overflow: hidden;
 }
+
+.pm-staff-profile-container .img-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+@media (max-width: 576px){
+  .pm-staff-profile-container .img-fluid {
+      width: 200px;
+      height: 200px;
+
+  }
+}
+
+@media (max-width: 768px){
+  .pm-staff-profile-container .img-fluid {
+      width: 150px;
+      height: 150px;
+
+  }
+}
+
 
 .testimonial-single .owl-nav {
   text-align: left;
