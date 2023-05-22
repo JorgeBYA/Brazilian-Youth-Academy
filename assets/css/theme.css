@@ -2264,6 +2264,69 @@ a.fg-light:focus {
   max-width: 100%;
 }
 
+.founders {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+}
+
+.founders .team-profile {
+  position: relative;
+  display: block;
+  width: 1280px;
+  max-width: 100%;
+  background-color: #AFB7C1;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.founders .team-profile img {
+  width: 1280px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px){
+  .founders .team-profile img {
+    max-width: 250px;
+  }
+  .founders .team-profile {
+    width: 250px;
+  }
+}
+
+@media (max-width: 600px){
+  .founders .team-profile img {
+    max-width: 200px;
+  }
+  .founders .team-profile {
+    width: 200px;
+  }
+}
+
+@media (max-width: 428px){
+  .founders .team-profile img {
+    max-width: 150px;
+  }
+  .founders .team-profile {
+    width: 150px;
+  }
+}
+
+@media (max-width: 350px){
+  .founders {
+    flex-direction: column;
+  }
+  .founders .team-profile img {
+    max-width: 200px;
+  }
+  .founders .team-profile {
+    width: 200px;
+  }
+}
+
 .team-content {
   display: block;
   padding: 10px;
@@ -3458,7 +3521,7 @@ p {
 
 [class^=imghvr-]>img {
   vertical-align: top;
-  max-width: 100%;
+  max-width: 500px;
 }
 
 [class^=imghvr-] figcaption {
@@ -3527,23 +3590,16 @@ p {
   transition-delay: .21s;
 }
 
-.imghvr-fold-up>img {
-  -webkit-transform-origin: 50% 0;
-  -ms-transform-origin: 50% 0;
-  transform-origin: 50% 0;
+.card img {
+  justify-self: flex-start;
+  object-fit: cover;
+  object-position: 50% 0%;
 }
 
-.imghvr-fold-up figcaption {
-  -webkit-transform: rotateX(-90deg) translate3d(0, -50%, 0) scale(.6);
-  transform: rotateX(-90deg) translate3d(0, -50%, 0) scale(.6);
-  -webkit-transform-origin: 50% 100%;
-  -ms-transform-origin: 50% 100%;
-  transform-origin: 50% 100%;
-}
-
-.imghvr-fold-up:hover>img {
-  -webkit-transform: rotateX(90deg) scale(.6) translateY(50%);
-  transform: rotateX(90deg) scale(.6) translateY(50%);
+.card-img-top{
+  text-align: center;
+  height: 150px;
+  overflow: hidden;
 }
 
 .section-padding {
