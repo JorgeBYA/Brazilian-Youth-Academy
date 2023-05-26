@@ -61,7 +61,8 @@
     </nav>
     <!-- .navbar -->
 
-    <div class="page-banner bg-img overlay-dark_gradient" style="background-image: url(../assets/img/courses/background_boston.png);">
+    <div class="page-banner bg-img overlay-dark_gradient"
+      style="background-image: url(../assets/img/courses/background_boston.png);">
       <div class="hero-section">
         <div class="container">
           <div class="row justify-content-center text-center mt-5">
@@ -83,18 +84,39 @@
   <main>
     <section id="courses" class="section-padding">
       <div class="container">
-        <div class="row">
+        <div class="container col-lg-8">
           <div class="header-section text-center">
-            <h2>Torne-se um aluno</h2>
-            <p class="speech">
-              Envie-nos algumas informações necessárias para se tornar um aluno da Brazilian youth Academy
+            <h2>Torne-se um mentorado</h2>
+            <p class="speech text-justify">
+              Bem-vindo ao programa de mentoria da Brazilian Youth Association (BYA)!
+              <br>
+              Se você está em busca de uma oportunidade de crescimento pessoal, acadêmico e profissional, você veio ao
+              lugar certo. A BYA oferece um programa de mentoria dedicado a apoiar jovens brasileiros como você, através
+              de orientação personalizada, suporte e conselhos de mentores experientes.
+              <br>
+              Não perca a chance de receber orientação de qualidade e expandir seus horizontes. Nossa organização é
+              comprometida em promover o desenvolvimento de jovens talentosos como você, e temos mentores prontos para
+              ajudá-lo em sua jornada.
+              <br>
+              Para se inscrever, basta preencher o formulário de inscrição abaixo. Compartilhe suas informações
+              pessoais, histórico acadêmico e explique por que você está interessado em participar do programa de
+              mentoria. Suas respostas nos ajudarão a entender suas necessidades e encontrar o mentor adequado para
+              você.
+              <br>
+              Acreditamos no poder da mentoria para impulsionar o seu sucesso e estamos ansiosos para recebê-lo em nossa
+              comunidade de mentores e mentorados comprometidos em alcançar resultados extraordinários.
+              <br>
+              Não deixe essa oportunidade passar! Inscreva-se agora na BYA e comece sua jornada de desenvolvimento e
+              conquistas.
+              <br>
+              Estamos aqui para apoiá-lo em sua jornada rumo ao sucesso. Seja bem-vindo à BYA.
             </p>
             <hr class="bottom-line">
           </div>
         </div>
       </div>
 
-      <div class="away container">
+      <!-- <div class="away container">
         <div class="row">
           <div class="header-section text-center">
             <h2>Como funciona?</h2>
@@ -103,178 +125,219 @@
             </p>
           </div>
         </div>
-      </div>
+      </div> -->
+      
       <div class="box">
-        <!-- <div class="img-box">
-          <img class="background" src="../assets/img/mentor-forms_illustration.svg">
-        </div> -->
+
         <div class="contact-forms col-md-8">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="pills-parte1-tab" data-toggle="pill" href="#pills-parte1" role="tab"
+                aria-controls="pills-parte1" aria-selected="true">parte 1</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-parte2-tab" data-toggle="pill" href="#pills-parte2" role="tab"
+                aria-controls="pills-parte2" aria-selected="false">parte 2</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-parte3-tab" data-toggle="pill" href="#pills-parte3" role="tab"
+                aria-controls="pills-parte3" aria-selected="false">parte 3</a>
+            </li>
+          </ul>
+          
           <form method="POST" action="#" name="contact" class="needs-validation" novalidate netlify>
-            <div class="form-group">
-              <label for="nome">Nome Completo: *</label>
-              <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome completo..." required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email para contato: *</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="Seu melhor email..."
-                required>
-            </div>
-            <div class="form-group">
-              <label for="telefone">Telefone para contato: *</label>
-              <input type="tel" class="form-control" id="telefone" name="telefone"
-                placeholder="Seu número de telefone/celular..." required>
-            </div>
-            <div class="form-group">
-              <label for="data-nascimento">Data de nascimento: *</label>
-              <input type="date" class="form-control" id="data-nascimento" name="data-nascimento"
-                placeholder="Sua data de nascimento..." required>
-            </div>
-            <div class="form-group">
-              <label for="estado" class="form-label">Selecione seu Estado: </label>
-              <input class="form-control" list="listaEstados" id="estado" placeholder="Pesquisar..." required>
-              <datalist id="listaEstados">
-                <option value="AC">Acre</option>
-                <option value="AL">Alagoas</option>
-                <option value="AP">Amapá</option>
-                <option value="AM">Amazonas</option>
-                <option value="BA">Bahia</option>
-                <option value="CE">Ceará</option>
-                <option value="DF">Distrito Federal</option>
-                <option value="ES">Espírito Santo</option>
-                <option value="GO">Goiás</option>
-                <option value="MA">Maranhão</option>
-                <option value="MT">Mato Grosso</option>
-                <option value="MS">Mato Grosso do Sul</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="PA">Pará</option>
-                <option value="PB">Paraíba</option>
-                <option value="PR">Paraná</option>
-                <option value="PE">Pernambuco</option>
-                <option value="PI">Piauí</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="RN">Rio Grande do Norte</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="RO">Rondônia</option>
-                <option value="RR">Roraima</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="SP">São Paulo</option>
-                <option value="SE">Sergipe</option>
-                <option value="TO">Tocantins</option>
-                <option value="EX">Estrangeiro</option>
-              </datalist>
-            </div>
-            <div class="form-group">
-              <label for="cidade" class="form-label">Selecione sua cidade: </label>
-              <input class="form-control" list="listaCidades" id="cidade" placeholder="Pesquisar..." required>
-              <datalist id="listaCidades">
-                <option>primeiro selecione o seu estado</option>
-              </datalist>
-            </div>
-            <div class="form-group">
-              <label for="situacao-academica">Ocupação Acadêmica: *</label>
-              <select id="situacao-academica" name="situacao-academica" class="form-select form-control form-select-lg">
-                <option>1° Ano do Ensino Médio</option>
-                <option>2° Ano do Ensino Médio</option>
-                <option>3° Ano do Ensino Médio</option>
-                <option>Gap Year</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="escola">Nome do Colégio (caso esteja em Gap Year, adicione a instituição de ensino na qual
-                concluiu o 3° EM)</label>
-              <input type="text" class="form-control" id="escola" name="escola" placeholder="Instituição de ensino..."
-                required>
-            </div>
-            <div class="form-group">
-              <input type="file" id="matricula" name="matricula" />
-              <label for="matricula" class="btn-1 form-label">Enviar o comprovante de matrícula</label>
+            <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-parte1" role="tabpanel" aria-labelledby="pills-parte1-tab">
+              <div class="form-group">
+                <label for="nome">Nome Completo: *</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome completo..." required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email para contato: *</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Seu melhor email..."
+                  required>
+              </div>
+              <div class="form-group">
+                <label for="telefone">Telefone para contato: *</label>
+                <input type="tel" class="form-control" id="telefone" name="telefone"
+                  placeholder="Seu número de telefone/celular..." required>
+              </div>
+              <div class="form-group">
+                <label for="data-nascimento">Data de nascimento: *</label>
+                <input type="date" class="form-control" id="data-nascimento" name="data-nascimento"
+                  placeholder="Sua data de nascimento..." required>
+              </div>
+              <div class="form-group">
+                <label for="estado" class="form-label">Selecione seu Estado: </label>
+                <input class="form-control" list="listaEstados" id="estado" placeholder="Pesquisar..." required>
+                <datalist id="listaEstados">
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
+                  <option value="EX">Estrangeiro</option>
+                </datalist>
+              </div>
+              <div class="form-group">
+                <label for="cidade" class="form-label">Selecione sua cidade: </label>
+                <input class="form-control" list="listaCidades" id="cidade" placeholder="Pesquisar..." required>
+                <datalist id="listaCidades">
+                  <option>primeiro selecione o seu estado</option>
+                </datalist>
+              </div>
             </div>
 
-            <div class="form-group">
-              <label for="GPA">GPA (Média de Notas do Ensino Médio). Exemplo: 1/10 ou 10/10
-                *</label>
-              <input type="number" class="form-control form-range" id="GPA" name="GPA" placeholder="0.0" step="0.5" required>
+            <div class="tab-pane fade" id="pills-parte2" role="tabpanel" aria-labelledby="pills-parte2-tab">
+              <div class="form-group">
+                <label for="situacao-academica">Ocupação Acadêmica: *</label>
+                <select id="situacao-academica" name="situacao-academica" class="form-select form-control form-select-lg">
+                  <option>1° Ano do Ensino Médio</option>
+                  <option>2° Ano do Ensino Médio</option>
+                  <option>3° Ano do Ensino Médio</option>
+                  <option>Gap Year</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="escola">Nome do Colégio (caso esteja em Gap Year, adicione a instituição de ensino na qual
+                  concluiu o 3° EM)</label>
+                <input type="text" class="form-control" id="escola" name="escola" placeholder="Instituição de ensino..."
+                  required>
+              </div>
+              <div class="form-group">
+                <input type="file" id="matricula" name="matricula" />
+                <label for="matricula" class="btn-1 form-label">Enviar o comprovante de matrícula</label>
+              </div>
+
+              <div class="form-group">
+                <label for="GPA">GPA (Média de Notas do Ensino Médio). Exemplo: 1/10 ou 10/10
+                  *</label>
+                <input type="number" class="form-control form-range" id="GPA" name="GPA" placeholder="0.0" step="0.5"
+                  required>
+              </div>
+
+              <div class="form-group">
+                <label for="atividades">Liste suas cinco principais atividades extracurriculares atuais e anteriores,
+                  incluindo o mês/ano de início e término.*</label>
+                <input type="text" class="form-control" id="atividades" name="atividades"
+                  placeholder="liste as atividades..." required>
+              </div>
+
+              <div class="form-group">
+                <label for="simulacoes">Quantas simulações já participou?</label>
+                <select id="simulacoes" name="simulacoes" class="form-select form-control form-select-lg">
+                  <option>0 - 3</option>
+                  <option>5 - 8</option>
+                  <option>9 - 12</option>
+                  <option>13 ou mais</option>
+                </select>
+              </div>
             </div>
 
-            <div class="form-group">
-              <label for="atividades">Liste suas cinco principais atividades extracurriculares atuais e anteriores, incluindo o mês/ano de início e término.*</label>
-              <input type="text" class="form-control" id="atividades" name="atividades" placeholder="liste as atividades..." required>
-            </div>
+            <div class="tab-pane fade" id="pills-parte3" role="tabpanel" aria-labelledby="pills-parte3-tab">
+              <div class="form-group">
+                <label for="why-me">Por favor, explique por que você optou por se inscrever na BYA, especificamente, e por
+                  que você seria um excelente candidato.<br>
+                  O que você espera obter com a experiência na BYA e como pretende utilizar esse conhecimento para
+                  impactar positivamente sua comunidade?
+                  <br>
+                  (200 caracteres)*</label>
+                <textarea type="text" maxlength="200" rows="3" style="resize: none;" class="form-control" id="why-me"
+                  name="why-me" placeholder="Por que eu?..." required></textarea>
+              </div>
 
-            <div class="form-group">
-              <label for="simulacoes">Quantas simulações já participou?</label>
-              <select id="simulacoes" name="simulacoes" class="form-select form-control form-select-lg">
-                <option>0 - 3</option>
-                <option>5 - 8</option>
-                <option>9 - 12</option>
-                <option>13 ou mais</option>
-              </select>            
-            </div>
+              <div class="form-group">
+                <label for="interesse">Discorra sobre um tema de seu interesse acadêmico, utilizando o pensamento crítico,
+                  e justifique sua escolha.
+                  <br>
+                  (1500 caracteres):*</label>
+                <textarea type="text" maxlength="1500" rows="10" style="resize: none;" class="form-control" id="why-me"
+                  name="interesse" placeholder="Discorra sobre..." required></textarea>
+              </div>
 
-            <div class="form-group">
-              <label for="why-me">Por favor, explique por que você optou por se inscrever na BYA, especificamente, e por que você seria um excelente candidato.<br>
-O que você espera obter com a experiência na BYA e como pretende utilizar esse conhecimento para impactar positivamente sua comunidade?
-<br>
-(200 caracteres)*</label>
-              <textarea type="text" maxlength="200" rows="3" style="resize: none;" class="form-control" id="why-me" name="why-me" placeholder="Por que eu?..." required></textarea>
-            </div>
+              <div class="form-group">
+                <label for="valores">Selecione um dos valores do programa que mais ressoe com você e descreva como você
+                  buscou esse valor em sua própria vida.
+                  Nossos valores são: Educação de Qualidade, Democratização do acesso a oportunidades internacionais,
+                  Pensamento Crítico, Liderança, Consciência Global e Diversidade.
+                  <br>
+                  (1500 caracteres): *</label>
+                <textarea type="text" maxlength="1500" rows="10" style="resize: none;" class="form-control" id="valores"
+                  name="valores" placeholder="Valores que você se identifica e porquê..." required></textarea>
+              </div>
 
-            <div class="form-group">
-              <label for="interesse">Discorra sobre um tema de seu interesse acadêmico, utilizando o pensamento crítico, e justifique sua escolha.
-                <br>
-                (1500 caracteres):*</label>
-              <textarea type="text" maxlength="1500" rows="10" style="resize: none;" class="form-control" id="why-me" name="interesse" placeholder="Discorra sobre..." required></textarea>
-            </div>
+              <div class="form-group">
+                <label for="video-link">Gostaríamos de saber mais sobre sua formação, crenças, valores e as pessoas
+                  significativas em sua vida. Por favor, compartilhe conosco uma experiência que o influenciou e explique
+                  como ela moldou você.
 
-            <div class="form-group">
-              <label for="valores">Selecione um dos valores do programa que mais ressoe com você e descreva como você buscou esse valor em sua própria vida.
-                Nossos valores são: Educação de Qualidade, Democratização do acesso a oportunidades internacionais, Pensamento Crítico, Liderança, Consciência Global e Diversidade.
-                <br>
-                (1500 caracteres): *</label>
-              <textarea type="text" maxlength="1500" rows="10" style="resize: none;" class="form-control" id="valores" name="valores" placeholder="Valores que você se identifica e porquê..." required></textarea>
-            </div>
+                  Por favor, grave um vídeo em inglês com duração de 2 minutos e adicione-o como vídeo não listado no
+                  YouTube.
 
-            <div class="form-group">
-              <label for="video-link">Gostaríamos de saber mais sobre sua formação, crenças, valores e as pessoas significativas em sua vida. Por favor, compartilhe conosco uma experiência que o influenciou e explique como ela moldou você.
+                  Envie o link de acesso abaixo. Se não for enviado corretamente, sua inscrição será automaticamente
+                  rejeitada.*</label>
+                <input type="text" class="form-control" id="video-link" name="video-link"
+                  placeholder="https://youtube.com/link-exemplo..." required></input>
+              </div>
 
-                Por favor, grave um vídeo em inglês com duração de 2 minutos e adicione-o como vídeo não listado no YouTube.
-                
-                Envie o link de acesso abaixo. Se não for enviado corretamente, sua inscrição será automaticamente rejeitada.*</label>
-              <input type="text" class="form-control" id="video-link" name="video-link" placeholder="https://youtube.com/link-exemplo..." required></input>
-            </div>
+              <div class="form-group">
+                <label for="foto">Por favor, adicione uma foto de sua escolha que será utilizada para fins acadêmicos,
+                  caso sua inscrição seja aprovada.</label>
+                <input type="file" id="foto" name="foto" />
+                <label for="foto" class="btn-1 form-label">Enviar foto</label>
+              </div>
 
-            <div class="form-group">
-              <label for="foto">Por favor, adicione uma foto de sua escolha que será utilizada para fins acadêmicos, caso sua inscrição seja aprovada.</label>
-              <input type="file" id="foto" name="foto" />
-              <label for="foto" class="btn-1 form-label">Enviar foto</label>
-            </div>
+              <div class="form-group">
+                <label for="termo-responsabilidade">Por favor, anexe aqui o Termo de Responsabilidade assinado por seu
+                  responsável legal.
+                  <br>
+                  Observação: Caso seja maior de idade ou menor emancipado, por favor, envie um documento de comprovação
+                  em vez de anexar o termo de responsabilidade. *</label>
+                <input type="file" id="termo-responsabilidade" name="termo-responsabilidade" required />
+                <label for="termo-responsabilidade" class="btn-1 form-label">Enviar documento</label>
+              </div>
 
-            <div class="form-group">
-              <label for="termo-responsabilidade">Por favor, anexe aqui o Termo de Responsabilidade assinado por seu responsável legal.
-              <br>
-                Observação: Caso seja maior de idade ou menor emancipado, por favor, envie um documento de comprovação em vez de anexar o termo de responsabilidade. *</label>
-              <input type="file" id="termo-responsabilidade" name="termo-responsabilidade" required/>
-              <label for="termo-responsabilidade" class="btn-1 form-label">Enviar documento</label>
+              <div class="form-group">
+                <label for="termo-uso-imagem">Por favor, anexe aqui o Termo de Autorização de Uso de Imagem assinado por
+                  seu responsável legal.
+                  <br>
+                  Observação: Caso seja maior de idade ou menor emancipado, utilize sua assinatura. *</label>
+                <input type="file" id="termo-uso-imagem" name="termo-uso-imagem" required />
+                <label for="termo-uso-imagem" class="btn-1 form-label">Enviar documento</label>
+              </div>
+              <button style="margin-top: 1em;" type="submit" class="btn btn-primary bt">Enviar formulário</button>
             </div>
-
-            <div class="form-group">
-              <label for="termo-uso-imagem">Por favor, anexe aqui o Termo de Autorização de Uso de Imagem assinado por seu responsável legal.
-                <br>
-                Observação: Caso seja maior de idade ou menor emancipado, utilize sua assinatura. *</label>
-              <input type="file" id="termo-uso-imagem" name="termo-uso-imagem" required/>
-              <label for="termo-uso-imagem" class="btn-1 form-label">Enviar documento</label>
-            </div>
-            <button style="margin-top: 1em;" type="submit" class="btn btn-primary bt">Enviar formulário</button>
+          </div>
           </form>
+          
           <p>
             Algum problema? <a href="./contact.html"> Suporte </a>
           </p>
         </div>
       </div>
       <!-- .page-section -->
-
-
-
     </section>
     </div>
     <!-- .page-section -->
@@ -597,7 +660,7 @@ O que você espera obter com a experiência na BYA e como pretende utilizar esse
   <script src="../assets/plugins/wow/wow.min.js"></script>
 
   <script src="../assets/js/theme.js"></script>
-  
+
   <script src="../assets/plugins/validateForm/validate.js"></script>
   <!-- <script src="../assets/plugins/formSlider/formSlider.js"></script> -->
 </body>
