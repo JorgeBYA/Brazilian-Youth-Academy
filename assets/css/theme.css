@@ -1494,6 +1494,10 @@ a.fg-light:focus {
   font-size: 14px;
 }
 
+.nav-item {
+  font-weight: bolder;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: #6d728bbf;
 }
@@ -3987,13 +3991,13 @@ form .input-group input:focus {
 }
 
 
-[type=file]{
+/* [type=file]{
   height: 0;
   overflow: hidden;
   width: 0;
-}
+} */
 
-[type=file]+label{
+/* [type=file]+label{
   background-color: #591513;
   border: none;
   border-radius: 5px;
@@ -4009,16 +4013,19 @@ form .input-group input:focus {
   position: relative;
   transition: all 0.3s;
   vertical-align: middle;
-}
+} */
+/* 
 [type=file] + label:hover {
   background-color: #590c13;
-}
+} */
+/* 
 [type=file] + label.btn-1 {
   background-color: #ae1725;
   box-shadow: 0 6px #590c13;
   transition: none;
-}
+} */
+/* 
 [type=file] + label.btn-1:hover {
   box-shadow: 0 4px #590c13;
   top: 2px;
-}
+} */

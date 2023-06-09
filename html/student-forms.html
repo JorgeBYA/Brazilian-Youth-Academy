@@ -44,15 +44,24 @@
             <li class="nav-item">
               <a href="./tutor.html" class="nav-link">Nossos Mentores</a>
             </li>
-            <!-- <li class="nav-item">
-                                                                                                                                                                                        <a href="./tutor.html" class="nav-link">Trabalhe Conosco</a>
-                                                                                                                                                                                      </li> -->
-            <!-- <li class="nav-item">
-                                                                                                                                                                                      <a href="blog.html" class="nav-link">Nossas Postagens</a>
-                                                                                                                                                                                    </li> -->
             <li class="nav-item">
-              <a href="#" class="nav-link btn btn-primary btn-sm mt-2">Inscreva-se!</a>
+              <a href="./HMUN.html" class="nav-link">HMUN</a>
             </li>
+            <li class="nav-item">
+              <a href="./YMUN.html" class="nav-link">YMUN</a>
+            </li>
+            <li class="nav-item">
+              <a href="./MUN.html" class="nav-link">Simulações da ONU</a>
+            </li>
+            <li class="nav-item">
+              <a href="./Missao_Visao_Valores.html" class="nav-link">Nossa Missão</a>
+            </li>
+            <li class="nav-item">
+              <a href="./tutor.html" class="nav-link">Nossos Mentores</a>
+            </li>
+            <li class="nav-item">
+              <a href="./student-forms.html" class="nav-link btn btn-primary btn-sm mt-2">Inscreva-se!</a>
+            </li>          
           </ul>
         </div>
         <!-- .navbar-collapse -->
@@ -112,6 +121,9 @@
               Estamos aqui para apoiá-lo em sua jornada rumo ao sucesso. Seja bem-vindo à BYA.
             </p>
             <hr class="bottom-line">
+            <div class="team-content">
+              <h3>Em Breve: Inscrições Abertas!</h3>
+            </div>            
           </div>
         </div>
       </div>
@@ -126,8 +138,8 @@
           </div>
         </div>
       </div> -->
-      
-      <div class="box">
+
+      <!-- <div class="box">
 
         <div class="student subscription col-md-8">
           <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -144,199 +156,209 @@
                 aria-controls="pills-parte3" aria-selected="false">parte 3</a>
             </li>
           </ul>
-          
-          <form method="POST" action="../index.html" name="student-subscription" class="needs-validation" novalidate enctype="multipart/form-data" data-netlify="true">
+
+          <form method="POST" action="../index.html" name="student-subscription" class="needs-validation" novalidate
+            enctype="multipart/form-data" data-netlify="true">
             <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-parte1" role="tabpanel" aria-labelledby="pills-parte1-tab">
-              <div class="form-group">
-                <label for="nome">Nome Completo: *</label>
-                <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome completo..." required>
+              <div class="tab-pane fade show active" id="pills-parte1" role="tabpanel"
+                aria-labelledby="pills-parte1-tab">
+                <div class="form-group">
+                  <label for="nome">Nome Completo: *</label>
+                  <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome completo..."
+                    required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email para contato: *</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Seu melhor email..."
+                    required>
+                </div>
+                <div class="form-group">
+                  <label for="telefone">Telefone para contato: *</label>
+                  <input type="tel" class="form-control" id="telefone" name="telefone"
+                    placeholder="Seu número de telefone/celular..." required>
+                </div>
+                <div class="form-group">
+                  <label for="data-nascimento">Data de nascimento: *</label>
+                  <input type="date" class="form-control" id="data-nascimento" name="data-nascimento"
+                    placeholder="Sua data de nascimento..." required>
+                </div>
+                <div class="form-group">
+                  <label for="estado" class="form-label">Selecione seu Estado: </label>
+                  <input class="form-control" list="listaEstados" id="estado" placeholder="Pesquisar..." required>
+                  <datalist id="listaEstados">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="EX">Estrangeiro</option>
+                  </datalist>
+                </div>
+                <div class="form-group">
+                  <label for="cidade" class="form-label">Selecione sua cidade: </label>
+                  <input class="form-control" list="listaCidades" id="cidade" placeholder="Pesquisar..." required>
+                  <datalist id="listaCidades">
+                    <option>primeiro selecione o seu estado</option>
+                  </datalist>
+                </div>
               </div>
-              <div class="form-group">
-                <label for="email">Email para contato: *</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Seu melhor email..."
-                  required>
+
+              <div class="tab-pane fade" id="pills-parte2" role="tabpanel" aria-labelledby="pills-parte2-tab">
+                <div class="form-group">
+                  <label for="situacao-academica">Ocupação Acadêmica: *</label>
+                  <select id="situacao-academica" name="situacao-academica"
+                    class="form-select form-control form-select-lg">
+                    <option>1° Ano do Ensino Médio</option>
+                    <option>2° Ano do Ensino Médio</option>
+                    <option>3° Ano do Ensino Médio</option>
+                    <option>Gap Year</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="escola">Nome do Colégio (caso esteja em Gap Year, adicione a instituição de ensino na qual
+                    concluiu o 3° EM)</label>
+                  <input type="text" class="form-control" id="escola" name="escola"
+                    placeholder="Instituição de ensino..." required>
+                </div>
+                <div class="form-group">
+                  <input type="file" id="matricula" name="matricula" />
+                  <label for="matricula" class="btn-1 form-label" onchange="fileUploaded(this)">Enviar o comprovante de
+                    matrícula</label>
+                </div>
+
+                <div class="form-group">
+                  <label for="GPA">GPA (Média de Notas do Ensino Médio). Exemplo: 1/10 ou 10/10
+                    *</label>
+                  <input type="number" class="form-control form-range" id="GPA" name="GPA" placeholder="0.0" step="0.5"
+                    required>
+                </div>
+
+                <div class="form-group">
+                  <label for="atividades">Liste suas cinco principais atividades extracurriculares atuais e anteriores,
+                    incluindo o mês/ano de início e término.*</label>
+                  <input type="text" class="form-control" id="atividades" name="atividades"
+                    placeholder="liste as atividades..." required>
+                </div>
+
+                <div class="form-group">
+                  <label for="simulacoes">Quantas simulações já participou?</label>
+                  <select id="simulacoes" name="simulacoes" class="form-select form-control form-select-lg">
+                    <option>0 - 3</option>
+                    <option>5 - 8</option>
+                    <option>9 - 12</option>
+                    <option>13 ou mais</option>
+                  </select>
+                </div>
               </div>
-              <div class="form-group">
-                <label for="telefone">Telefone para contato: *</label>
-                <input type="tel" class="form-control" id="telefone" name="telefone"
-                  placeholder="Seu número de telefone/celular..." required>
-              </div>
-              <div class="form-group">
-                <label for="data-nascimento">Data de nascimento: *</label>
-                <input type="date" class="form-control" id="data-nascimento" name="data-nascimento"
-                  placeholder="Sua data de nascimento..." required>
-              </div>
-              <div class="form-group">
-                <label for="estado" class="form-label">Selecione seu Estado: </label>
-                <input class="form-control" list="listaEstados" id="estado" placeholder="Pesquisar..." required>
-                <datalist id="listaEstados">
-                  <option value="AC">Acre</option>
-                  <option value="AL">Alagoas</option>
-                  <option value="AP">Amapá</option>
-                  <option value="AM">Amazonas</option>
-                  <option value="BA">Bahia</option>
-                  <option value="CE">Ceará</option>
-                  <option value="DF">Distrito Federal</option>
-                  <option value="ES">Espírito Santo</option>
-                  <option value="GO">Goiás</option>
-                  <option value="MA">Maranhão</option>
-                  <option value="MT">Mato Grosso</option>
-                  <option value="MS">Mato Grosso do Sul</option>
-                  <option value="MG">Minas Gerais</option>
-                  <option value="PA">Pará</option>
-                  <option value="PB">Paraíba</option>
-                  <option value="PR">Paraná</option>
-                  <option value="PE">Pernambuco</option>
-                  <option value="PI">Piauí</option>
-                  <option value="RJ">Rio de Janeiro</option>
-                  <option value="RN">Rio Grande do Norte</option>
-                  <option value="RS">Rio Grande do Sul</option>
-                  <option value="RO">Rondônia</option>
-                  <option value="RR">Roraima</option>
-                  <option value="SC">Santa Catarina</option>
-                  <option value="SP">São Paulo</option>
-                  <option value="SE">Sergipe</option>
-                  <option value="TO">Tocantins</option>
-                  <option value="EX">Estrangeiro</option>
-                </datalist>
-              </div>
-              <div class="form-group">
-                <label for="cidade" class="form-label">Selecione sua cidade: </label>
-                <input class="form-control" list="listaCidades" id="cidade" placeholder="Pesquisar..." required>
-                <datalist id="listaCidades">
-                  <option>primeiro selecione o seu estado</option>
-                </datalist>
+
+              <div class="tab-pane fade" id="pills-parte3" role="tabpanel" aria-labelledby="pills-parte3-tab">
+                <div class="form-group">
+                  <label for="why-me">Por favor, explique por que você optou por se inscrever na BYA, especificamente, e
+                    por
+                    que você seria um excelente candidato.<br>
+                    O que você espera obter com a experiência na BYA e como pretende utilizar esse conhecimento para
+                    impactar positivamente sua comunidade?
+                    <br>
+                    (300 caracteres)*</label>
+                  <textarea type="text" maxlength="200" rows="5" style="resize: none;" class="form-control" id="why-me"
+                    name="why-me" placeholder="Por que eu?..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="interesse">Discorra sobre um tema de seu interesse acadêmico, utilizando o pensamento
+                    crítico,
+                    e justifique sua escolha.
+                    <br>
+                    (1500 caracteres):*</label>
+                  <textarea type="text" maxlength="1500" rows="10" style="resize: none;" class="form-control"
+                    id="why-me" name="interesse" placeholder="Discorra sobre..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="valores">Selecione um dos valores do programa que mais ressoe com você e descreva como
+                    você
+                    buscou esse valor em sua própria vida.
+                    Nossos valores são: Educação de Qualidade, Democratização do acesso a oportunidades internacionais,
+                    Pensamento Crítico, Liderança, Consciência Global e Diversidade.
+                    <br>
+                    (1500 caracteres): *</label>
+                  <textarea type="text" maxlength="1500" rows="10" style="resize: none;" class="form-control"
+                    id="valores" name="valores" placeholder="Valores que você se identifica e porquê..."
+                    required></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="video-link">Gostaríamos de saber mais sobre sua formação, crenças, valores e as pessoas
+                    significativas em sua vida. Por favor, compartilhe conosco uma experiência que o influenciou e
+                    explique
+                    como ela moldou você.
+
+                    Por favor, grave um vídeo em inglês com duração de 2 minutos e adicione-o como vídeo não listado no
+                    YouTube.
+
+                    Envie o link de acesso abaixo. Se não for enviado corretamente, sua inscrição será automaticamente
+                    rejeitada.*</label>
+                  <input type="text" class="form-control" id="video-link" name="video-link"
+                    placeholder="https://youtube.com/link-exemplo..." required></input>
+                </div>
+
+                <div class="form-group">
+                  <label for="foto">Por favor, adicione uma foto de sua escolha que será utilizada para fins acadêmicos,
+                    caso sua inscrição seja aprovada.</label>
+                  <input type="file" id="foto" name="foto" />
+                </div>
+
+                <div class="form-group">
+                  <label for="termo-responsabilidade">Por favor, anexe aqui o Termo de Responsabilidade assinado por seu
+                    responsável legal.
+                    <br>
+                    Observação: Caso seja maior de idade ou menor emancipado, por favor, envie um documento de
+                    comprovação
+                    em vez de anexar o termo de responsabilidade. *</label>
+                  <input type="file" id="termo-responsabilidade" name="termo-responsabilidade" required /> <br>
+                  <button style="margin-top: 1em;" type="button" class="btn btn-primary bt"><a style="all: unset;" href="../assets/documents/Termo_de_Responsabilidade.pdf" download="termo de responsabilidade">baixar arquivo de termo de responsabilidade</a></button>
+                </div>
+
+                <div class="form-group">
+                  <label for="termo-uso-imagem">Por favor, anexe aqui o Termo de Autorização de Uso de Imagem assinado
+                    por
+                    seu responsável legal.
+                    <br>
+                    Observação: Caso seja maior de idade ou menor emancipado, utilize sua assinatura. *</label>
+                  <input type="file" id="termo-uso-imagem" name="termo-uso-imagem" required /> <br>
+                  <button style="margin-top: 1em;" type="button" class="btn btn-primary bt"><a style="all: unset;" href="../assets/documents/Termo_de_Autorização_de_Uso_de_Imagem.pdf" download="termo de uso de imagem">baixar arquivo de termo de uso de imagem</a></button>
+                </div>
+                <button style="margin-top: 1em;" type="submit" class="btn btn-primary bt">Enviar formulário</button>
               </div>
             </div>
-
-            <div class="tab-pane fade" id="pills-parte2" role="tabpanel" aria-labelledby="pills-parte2-tab">
-              <div class="form-group">
-                <label for="situacao-academica">Ocupação Acadêmica: *</label>
-                <select id="situacao-academica" name="situacao-academica" class="form-select form-control form-select-lg">
-                  <option>1° Ano do Ensino Médio</option>
-                  <option>2° Ano do Ensino Médio</option>
-                  <option>3° Ano do Ensino Médio</option>
-                  <option>Gap Year</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="escola">Nome do Colégio (caso esteja em Gap Year, adicione a instituição de ensino na qual
-                  concluiu o 3° EM)</label>
-                <input type="text" class="form-control" id="escola" name="escola" placeholder="Instituição de ensino..."
-                  required>
-              </div>
-              <div class="form-group">
-                <input type="file" id="matricula" name="matricula" />
-                <label for="matricula" class="btn-1 form-label">Enviar o comprovante de matrícula</label>
-              </div>
-
-              <div class="form-group">
-                <label for="GPA">GPA (Média de Notas do Ensino Médio). Exemplo: 1/10 ou 10/10
-                  *</label>
-                <input type="number" class="form-control form-range" id="GPA" name="GPA" placeholder="0.0" step="0.5"
-                  required>
-              </div>
-
-              <div class="form-group">
-                <label for="atividades">Liste suas cinco principais atividades extracurriculares atuais e anteriores,
-                  incluindo o mês/ano de início e término.*</label>
-                <input type="text" class="form-control" id="atividades" name="atividades"
-                  placeholder="liste as atividades..." required>
-              </div>
-
-              <div class="form-group">
-                <label for="simulacoes">Quantas simulações já participou?</label>
-                <select id="simulacoes" name="simulacoes" class="form-select form-control form-select-lg">
-                  <option>0 - 3</option>
-                  <option>5 - 8</option>
-                  <option>9 - 12</option>
-                  <option>13 ou mais</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="tab-pane fade" id="pills-parte3" role="tabpanel" aria-labelledby="pills-parte3-tab">
-              <div class="form-group">
-                <label for="why-me">Por favor, explique por que você optou por se inscrever na BYA, especificamente, e por
-                  que você seria um excelente candidato.<br>
-                  O que você espera obter com a experiência na BYA e como pretende utilizar esse conhecimento para
-                  impactar positivamente sua comunidade?
-                  <br>
-                  (300 caracteres)*</label>
-                <textarea type="text" maxlength="200" rows="5" style="resize: none;" class="form-control" id="why-me"
-                  name="why-me" placeholder="Por que eu?..." required></textarea>
-              </div>
-
-              <div class="form-group">
-                <label for="interesse">Discorra sobre um tema de seu interesse acadêmico, utilizando o pensamento crítico,
-                  e justifique sua escolha.
-                  <br>
-                  (1500 caracteres):*</label>
-                <textarea type="text" maxlength="1500" rows="10" style="resize: none;" class="form-control" id="why-me"
-                  name="interesse" placeholder="Discorra sobre..." required></textarea>
-              </div>
-
-              <div class="form-group">
-                <label for="valores">Selecione um dos valores do programa que mais ressoe com você e descreva como você
-                  buscou esse valor em sua própria vida.
-                  Nossos valores são: Educação de Qualidade, Democratização do acesso a oportunidades internacionais,
-                  Pensamento Crítico, Liderança, Consciência Global e Diversidade.
-                  <br>
-                  (1500 caracteres): *</label>
-                <textarea type="text" maxlength="1500" rows="10" style="resize: none;" class="form-control" id="valores"
-                  name="valores" placeholder="Valores que você se identifica e porquê..." required></textarea>
-              </div>
-
-              <div class="form-group">
-                <label for="video-link">Gostaríamos de saber mais sobre sua formação, crenças, valores e as pessoas
-                  significativas em sua vida. Por favor, compartilhe conosco uma experiência que o influenciou e explique
-                  como ela moldou você.
-
-                  Por favor, grave um vídeo em inglês com duração de 2 minutos e adicione-o como vídeo não listado no
-                  YouTube.
-
-                  Envie o link de acesso abaixo. Se não for enviado corretamente, sua inscrição será automaticamente
-                  rejeitada.*</label>
-                <input type="text" class="form-control" id="video-link" name="video-link"
-                  placeholder="https://youtube.com/link-exemplo..." required></input>
-              </div>
-
-              <div class="form-group">
-                <label for="foto">Por favor, adicione uma foto de sua escolha que será utilizada para fins acadêmicos,
-                  caso sua inscrição seja aprovada.</label>
-                <input type="file" id="foto" name="foto" />
-                <label for="foto" class="btn-1 form-label">Enviar foto</label>
-              </div>
-
-              <div class="form-group">
-                <label for="termo-responsabilidade">Por favor, anexe aqui o Termo de Responsabilidade assinado por seu
-                  responsável legal.
-                  <br>
-                  Observação: Caso seja maior de idade ou menor emancipado, por favor, envie um documento de comprovação
-                  em vez de anexar o termo de responsabilidade. *</label>
-                <input type="file" id="termo-responsabilidade" name="termo-responsabilidade" required />
-                <label for="termo-responsabilidade" class="btn-1 form-label">Enviar documento</label>
-              </div>
-
-              <div class="form-group">
-                <label for="termo-uso-imagem">Por favor, anexe aqui o Termo de Autorização de Uso de Imagem assinado por
-                  seu responsável legal.
-                  <br>
-                  Observação: Caso seja maior de idade ou menor emancipado, utilize sua assinatura. *</label>
-                <input type="file" id="termo-uso-imagem" name="termo-uso-imagem" required />
-                <label for="termo-uso-imagem" class="btn-1 form-label">Enviar documento</label>
-              </div>
-              <button style="margin-top: 1em;" type="submit" class="btn btn-primary bt">Enviar formulário</button>
-            </div>
-          </div>
           </form>
-          
           <p>
             Algum problema? <a href="./contact.html"> Suporte </a>
           </p>
         </div>
-      </div>
+      </div> -->
       <!-- .page-section -->
     </section>
     </div>
@@ -464,136 +486,18 @@
   </footer>
   <!-- .page-footer -->
 
-
-  <!-- <script>
-
-  //  checkboxs 2
-
-
-  document.getElementById("checkbox_first_year").addEventListener("click", ()=> {
-    var CKfirst = document.getElementById("first")
-    CKfirst.checked = true;
-    if (CKfirst.checked == true) {
-      document.getElementById("checkbox_first_year").classList.add("active")
-      document.getElementById("second").checked = false;
-      document.getElementById("third").checked = false;
-      document.getElementById("gap").checked = false;
-      document.getElementById("checkbox_second_year").classList.remove("active")
-      document.getElementById("checkbox_third_year").classList.remove("active")
-      document.getElementById("checkbox_gap_year").classList.remove("active")
-      document.querySelector(".schooling").classList.remove("active")
+  <script>
+    function changeLabelText(el) {
+      console.log(el);
+        var documentValue = el.value; /* gets the filepath and filename from the input */
+        var fileNameStart = documentValue.lastIndexOf('\\'); /* finds the end of the filepath */
+        documentValue = documentValue.substr(fileNameStart + 1); /* isolates the filename */
+        var Label = document.querySelector(`label[for="${documentValue.id}"]`).childNodes[2]; /* finds the label text */
+        if (documentValue !== '') {
+            Label.textContent = documentValue; /* changes the label text */
+        }
     }
-  });
-
-  document.getElementById("checkbox_second_year").addEventListener("click", ()=> {
-    var CKfirst = document.getElementById("second")
-    CKfirst.checked = true;
-    if (CKfirst.checked == true) {
-      document.getElementById("checkbox_second_year").classList.add("active")
-      document.getElementById("first").checked = false;
-      document.getElementById("third").checked = false;
-      document.getElementById("gap").checked = false;
-      document.getElementById("checkbox_first_year").classList.remove("active")
-      document.getElementById("checkbox_third_year").classList.remove("active")
-      document.getElementById("checkbox_gap_year").classList.remove("active")
-      document.querySelector(".schooling").classList.remove("active")
-    }
-  });
-
-  document.getElementById("checkbox_third_year").addEventListener("click", ()=> {
-    var CKthird = document.getElementById("third")
-    CKthird.checked = true;
-    if (CKthird.checked == true) {
-      document.getElementById("checkbox_third_year").classList.add("active")
-      document.getElementById("first").checked = false;
-      document.getElementById("second").checked = false;
-      document.getElementById("gap").checked = false;
-      document.getElementById("checkbox_first_year").classList.remove("active")
-      document.getElementById("checkbox_second_year").classList.remove("active")
-      document.getElementById("checkbox_gap_year").classList.remove("active")
-      document.querySelector(".schooling").classList.remove("active")
-    }
-  });
-
-  document.getElementById("checkbox_gap_year").addEventListener("click", ()=> {
-    var CKgap = document.getElementById("gap")
-    CKgap.checked = true;
-    if (CKgap.checked == true) {
-      document.getElementById("checkbox_gap_year").classList.add("active")
-      document.getElementById("first").checked = false;
-      document.getElementById("second").checked = false;
-      document.getElementById("third").checked = false;
-      document.getElementById("checkbox_first_year").classList.remove("active")
-      document.getElementById("checkbox_second_year").classList.remove("active")
-      document.getElementById("checkbox_third_year").classList.remove("active")
-      document.querySelector(".schooling").classList.add("active")
-    }
-  });
-
-  //  checkboxs 2
-
-
-  document.getElementById("checkbox_fourSimulations").addEventListener("click", ()=> {
-    var CKfourSimulations = document.getElementById("fourSimulations")
-    CKfourSimulations.checked = true;
-    if (CKfourSimulations.checked == true) {
-      document.getElementById("checkbox_fourSimulations").classList.add("active")
-      document.getElementById("eightSimulations").checked = false;
-      document.getElementById("nineSimulations").checked = false;
-      document.getElementById("twelveSimulations").checked = false;
-      document.getElementById("checkbox_eightSimulations").classList.remove("active")
-      document.getElementById("checkbox_nineSimulations").classList.remove("active")
-      document.getElementById("checkbox_twelveSimulations").classList.remove("active")
-      document.querySelector(".schooling").classList.remove("active")
-    }
-  });
-
-  document.getElementById("checkbox_eightSimulations").addEventListener("click", ()=> {
-    var CKeightSimulations = document.getElementById("eightSimulations")
-    CKeightSimulations.checked = true;
-    if (CKeightSimulations.checked == true) {
-      document.getElementById("checkbox_eightSimulations").classList.add("active")
-      document.getElementById("fourSimulations").checked = false;
-      document.getElementById("nineSimulations").checked = false;
-      document.getElementById("twelveSimulations").checked = false;
-      document.getElementById("checkbox_fourSimulations").classList.remove("active")
-      document.getElementById("checkbox_nineSimulations").classList.remove("active")
-      document.getElementById("checkbox_twelveSimulations").classList.remove("active")
-      document.querySelector(".schooling").classList.remove("active")
-    }
-  });
-
-  document.getElementById("checkbox_nineSimulations").addEventListener("click", ()=> {
-    var CKnineSimulations = document.getElementById("nineSimulations")
-    CKnineSimulations.checked = true;
-    if (CKnineSimulations.checked == true) {
-      document.getElementById("checkbox_nineSimulations").classList.add("active")
-      document.getElementById("fourSimulations").checked = false;
-      document.getElementById("eightSimulations").checked = false;
-      document.getElementById("twelveSimulations").checked = false;
-      document.getElementById("checkbox_fourSimulations").classList.remove("active")
-      document.getElementById("checkbox_eightSimulations").classList.remove("active")
-      document.getElementById("checkbox_twelveSimulations").classList.remove("active")
-      document.querySelector(".schooling").classList.remove("active")
-    }
-  });
-
-  document.getElementById("checkbox_twelveSimulations").addEventListener("click", ()=> {
-    var CKtwelveSimulations = document.getElementById("twelveSimulations")
-    CKtwelveSimulations.checked = true;
-    if (CKtwelveSimulations.checked == true) {
-      document.getElementById("checkbox_twelveSimulations").classList.add("active")
-      document.getElementById("fourSimulations").checked = false;
-      document.getElementById("eightSimulations").checked = false;
-      document.getElementById("nineSimulations").checked = false;
-      document.getElementById("checkbox_fourSimulations").classList.remove("active")
-      document.getElementById("checkbox_eightSimulations").classList.remove("active")
-      document.getElementById("checkbox_nineSimulations").classList.remove("active")
-      document.querySelector(".schooling").classList.add("active")
-    }
-  });
-
-</script> -->
+  </script>
 
   <script>
     // Fetch JSON data
