@@ -1523,8 +1523,8 @@ a.fg-light:focus {
 
 @media (min-width: 576px) {
   .navbar-expand-sm.navbar-float {
-    top: 20px;
-    background-color: transparent;
+    /* top: 20px; */
+    background-color: #00000040;
   }
 
   .navbar-expand-sm .navbar-nav {
@@ -1546,8 +1546,8 @@ a.fg-light:focus {
 
 @media (min-width: 768px) {
   .navbar-expand-md.navbar-float {
-    top: 20px;
-    background-color: transparent;
+    /* top: 20px; */
+    background-color: #00000040;
   }
 
   .navbar-expand-md .navbar-nav {
@@ -1569,8 +1569,8 @@ a.fg-light:focus {
 
 @media (min-width: 992px) {
   .navbar-expand-lg.navbar-float {
-    top: 20px;
-    background-color: transparent;
+    /* top: 20px; */
+    background-color: #00000040;
   }
 
   .navbar-expand-lg .navbar-nav {
@@ -1592,8 +1592,8 @@ a.fg-light:focus {
 
 @media (min-width: 1200px) {
   .navbar-expand-xl.navbar-float {
-    top: 20px;
-    background-color: transparent;
+    /* top: 20px; */
+    background-color: #00000040;
   }
 
   .navbar-expand-xl .navbar-nav {
