@@ -14,10 +14,12 @@ const convertBase64 = (file) => {
 };
 
 const uploadImage = async (event, inputFile) => {
+    console.log(inputFile);
     const file = event.target.files[0];
     const base64 = await convertBase64(file);
     var inputHidden = document.createElement("input");
     inputHidden.type = "hidden";
+    inputHidden.name = 'data-'+inputFile.name;
     inputHidden.value = base64;
     // Insere o novo elemento após o input file
     inputFile.parentNode.insertBefore(inputHidden, inputFile.nextSibling);
