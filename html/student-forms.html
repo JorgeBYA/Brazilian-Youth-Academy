@@ -249,9 +249,10 @@
                     placeholder="Instituição de ensino..." required>
                 </div>
                 <div class="form-group">
-                  <input type="file" id="matricula" name="matricula" />
                   <label for="matricula" class="btn-1 form-label" onchange="fileUploaded(this)">Enviar o comprovante de
-                    matrícula</label>
+                    matrícula</label><br>
+                  <input type="file" id="matricula" name="matricula" />
+                  <textarea id="data-matricula" name="data-matricula" style="opacity: 0;"></textarea>
                 </div>
 
                 <div class="form-group">
@@ -322,7 +323,7 @@
                   <strong><a href="https://app.englishbay.com.br/" target="_blank" rel="noopener noreferrer"><i>englishbay</i></a></strong>
                 </label>                 
                   <input type="file" id="test-result" name="test-result" required /><br>
-
+                  <textarea id="data-test-result" name="data-test-result" style="opacity: 0;"></textarea>
                 </div>
 
                 <div class="form-group">
@@ -344,6 +345,7 @@
                   <label for="foto">Por favor, adicione uma foto de sua escolha que será utilizada para fins acadêmicos,
                     caso sua inscrição seja aprovada.</label>
                   <input type="file" id="foto" name="foto" />
+                  <textarea id="data-foto" name="data-foto" style="opacity: 0;"></textarea>
                 </div>
 
                 <div class="form-group">
@@ -354,6 +356,7 @@
                     comprovação
                     em vez de anexar o termo de responsabilidade. *</label>
                   <input type="file" id="termo-responsabilidade" name="termo-responsabilidade" required /> <br>
+                  <textarea id="data-termo-responsabilidade" name="data-termo-responsabilidade" style="opacity: 0;"></textarea><br>
                   <button style="margin-top: 1em;" type="button" class="btn btn-primary bt"><a style="all: unset;" href="../assets/documents/Termo_de_Responsabilidade.pdf" download="termo de responsabilidade">baixar arquivo de termo de responsabilidade</a></button>
                 </div>
 
@@ -364,6 +367,7 @@
                     <br>
                     Observação: Caso seja maior de idade ou menor emancipado, utilize sua assinatura. *</label>
                   <input type="file" id="termo-uso-imagem" name="termo-uso-imagem" required /> <br>
+                  <textarea id="data-termo-uso-imagem" name="data-termo-uso-imagem" style="opacity: 0;"></textarea><br>
                   <button style="margin-top: 1em;" type="button" class="btn btn-primary bt"><a style="all: unset;" href="../assets/documents/Termo_de_Autorização_de_Uso_de_Imagem.pdf" download="termo de uso de imagem">baixar arquivo de termo de uso de imagem</a></button>
                 </div>
                 <button style="margin-top: 1em;" type="submit" class="btn btn-primary bt">Enviar formulário</button>

@@ -14,16 +14,17 @@ const convertBase64 = (file) => {
 };
 
 const uploadImage = async (event, inputFile) => {
-    console.log(inputFile);
     const file = event.target.files[0];
     const base64 = await convertBase64(file);
-    var inputHidden = document.createElement("textarea");
-    // inputHidden.type = "textarea";
-    inputHidden.name = 'data-'+inputFile.name;
-    inputHidden.style.opacity = 0;
-    inputHidden.innerText = base64;
-    // Insere o novo elemento após o input file
-    inputFile.parentNode.insertBefore(inputHidden, inputFile.nextSibling);
+    var inputHidden = `data-${inputFile.name}`;
+    console.log(inputHidden);
+    // var inputHidden = document.createElement("textarea");
+    // // inputHidden.type = "textarea";
+    // inputHidden.name = 'data-'+inputFile.name;
+    // inputHidden.style.opacity = 0;
+    document.querySelector(`#${inputHidden}`).innerText = base64;
+    // // Insere o novo elemento após o input file
+    // inputFile.parentNode.insertBefore(inputHidden, inputFile.nextSibling);
 };
 
 window.onload = function() {
