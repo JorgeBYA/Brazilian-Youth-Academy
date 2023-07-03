@@ -86,12 +86,12 @@ $('document').ready(function() {
 
 $('document').ready(function() {
   
-  // Loader
-  $(window).on('load', function() {
-    setTimeout(() => {
-      $('.loader-container').fadeOut();
-    }, 200);
-  });
+  // // Loader
+  // $(window).on('load', function() {
+  //   setTimeout(() => {
+  //     $('.loader-container').fadeOut();
+  //   }, 200);
+  // });
   
   // Tooltips
   $('[data-toggle="tooltip"]').tooltip();
