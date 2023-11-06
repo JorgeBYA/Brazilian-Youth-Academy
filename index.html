@@ -28,10 +28,30 @@
 </head>
 
 <body>
-  <!-- Page Loader -->
-  <!-- <div class="loader-container">
-    <img src="./assets/img/ripple.svg" alt="" />
-  </div> -->
+  <!-- Modal -->
+  <div style="margin-top: 2.5em; z-index: 99;" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-md  modal-dialog-centered" role="document">
+      <div class="modal-content rounded-0">
+        <div class="modal-body py-0">
+          <div class="d-block main-content text-center">
+              <img src="./assets/img/simbolo_amarelo.png" alt="Image" class="img-fluid" style="background-color: #ffffff; width: 300px; height: 300px;">
+            <div class="content-text p-4">
+              
+              <h3 class="mb-4">Inscrições Abertas!!</h3>
+              <p class="mb-4">A BYA está de projeto novo, o BYA Insights!! Venha Conferir!!</p>
+              <div class="d-flex">
+                <div class="ml-auto">
+                  <a id="closeModal" class="btn btn-link" data-dismiss="modal" style="color: #96262e;">outra hora</a>
+                  <a href="./landing/index.html" class="btn btn-primary px-4">Visitar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Back to top button -->
   <div class="back-to-top"></div>
@@ -578,6 +598,18 @@
   <script src="./assets/plugins/wow/wow.min.js"></script>
 
   <script src="./assets/js/theme.js"></script>
+
+  <script>
+    window.addEventListener('load', (event) => {
+    document.querySelector(".modal").style.display = "block";
+    document.querySelector(".modal").style.opacity = 1;
+});
+
+    document.getElementById('closeModal').addEventListener('click', (event) => {
+    document.querySelector(".modal").style.display = "none";
+    document.querySelector(".modal").style.opacity = 0;
+});
+  </script>
 </body>
 
 </html>
