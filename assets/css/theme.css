@@ -1812,7 +1812,40 @@ a.fg-light:focus {
   height: 128px;
 }
 
-.back-to-top {
+
+#button {
+  display: inline-block;
+  background-color: #590c13;
+  width: fit-content;
+  height: 50px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  z-index: 1000;
+}
+#button::after {
+  content: "seja um membro";
+  font-size: 16px !important;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+/* .back-to-top {
   position: fixed;
   bottom: 20px;
   right: 25px;
@@ -1828,7 +1861,7 @@ a.fg-light:focus {
 }
 
 .back-to-top::after {
-  content: "";
+  content: "...";
   position: absolute;
   top: 50%;
   left: 0;
@@ -1846,7 +1879,7 @@ a.fg-light:focus {
   opacity: 1;
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
-}
+} */
 
 .top-bar {
   display: block;
