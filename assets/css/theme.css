@@ -1821,7 +1821,6 @@ a.fg-light:focus {
   border-radius: 50%;
   background: #590c13;
   opacity: 0.6;
-  visibility: hidden;
   cursor: pointer;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
